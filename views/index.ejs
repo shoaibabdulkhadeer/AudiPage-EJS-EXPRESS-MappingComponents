@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+    padding: 0px;
+    margin: 0px;
+
+
+}
+.nav{
+   
+    display: flex;
+    padding: 5px 25px;
+    background-color: white ;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    align-items: center;
+    padding: 0px 25px;
+}
+
+.main{
+  color: white;
+  padding: 40px 35px;
+    min-height: 90vh;
+    background: url(https://www.audi.in/content/dam/nemo/in/audi-brand/2231%20Q3SB%20WEB%20BANNER%201920X1920-01.jpg?imwidth=1920);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+
+}
+
+.title{
+    margin-bottom: 25px;
+    font-size: 40px;
+}
+
+.para{
+    margin-bottom: 25px;
+}
+
+.firstbut{
+    padding: 15px;
+    width: 135px;
+    border: none;
+}
+
+.secbut{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 15px;
+    width: 165px;
+}
+
+.smallcars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 10px;
+}
+
+.cardsection{
+    padding: 30px 45px;
+}
+
+.cards{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.aug{
+    display: flex;
+    padding: 45px 15px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.augtitle{
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+.augb1{
+       padding: 15px;
+    width: 115px;
+    background-color: black;
+    color: white;
+}
+.augb2{
+       padding: 15px;
+    width: 165px;
+    background-color: transparent;
+}
+.electric{
+    background: url("https://www.audi.in/content/dam/nemo/in/3_O-Homepage/E-tronHub-3840X4000.jpg?imwidth=1920");
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+.electricdet{
+   background-color: white;
+   color: black;
+   width: 500px;
+   margin-left: 50px;
+   padding: 35px;
+}
+
+.electricdet p{
+    margin-bottom: 10px;
+}
+.eletit{
+    margin-bottom: 15px;
+}
+.mapsec{
+    display: flex;
+    height: 500px;
+    padding: 45px 0px;
+}
+.dealer{
+    background-color: black;
+    color: white;
+    width: 450px;
+  
+    padding:25px 30px;
+}
+.connectsec{
+    display: flex;
+}
+.connecdet{
+    background-color: black;
+    color: white;
+    width: 870px;
+    padding: 25px;
+    font-size: 30px; 
+}
+.co{
+    margin-top: 470px
+}
+.myaudibut{
+    display: flex;
+    margin-top: 15px;
+}
+.mybut1{
+    padding: 20px;
+    width: 170px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+.mybut2{
+    padding: 20px;
+    width: 110px;
+    margin-left: 8px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+</style>
+
+<body>
+    <div class="nav">     
+        <ul> 
+            <img src="https://audimediacenter-a.akamaihd.net/system/production/media/1282/images/bde751ee18fe149036c6b47d7595f6784f8901f8/AL090142_full.jpg?1581961854" alt="" width="60px">
+            <li>Models</li>
+            <li>used cars</li>
+            <li>customer</li>
+            <li>Innovation</li>
+            <li>Quick Links</li>
+        </ul>
+
+         <img src="data:image/png;base64,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" 
+         alt="" width="30px">
+    </div>
+
+    <div class="main">
+        <h1 class="title">Some see a style statement,<br> we see a power move.</h1>
+        <p class="para">Powered by quattro </p>
+        <div class="buttons">
+            <button class="firstbut">Audi Q3</button>
+            <button class="secbut">Audi Q3 SportsBack</button>
+        </div>
+    </div>
+
+   
+    <div class="smallcars ">
+        <%  cars.map((car) => { %>
+            <div>
+                <img src=<%=car.image %> alt="" width="180px">
+                <p><%=car.title %></p>
+            </div>
+
+       <%})%>
+   
+    </div>
+
+      
+    <div class="aug">
+        <img src="https://www.audi.in/content/dam/nemo/in/models/a8/A86_883.jpg" alt="" width="570">
+  
+         <div>
+          <p class="augtitle">Audi Virtual <br> Showroom</p>
+  
+          <div>
+              <button class="augb1">e-tron</button>
+              <button class="augb2">e-tron Sportsback</button>
+          </div>
+         </div>
+  
+      </div> 
+
+
+     <div class="electric">
+        
+        <div class="electricdet"> 
+            <h2 class="eletit">The home of electric</h2>
+            <p>
+                Seeing the world with different eyes is what drives us. Discover more about our vision of the future of mobility. Learn more about the technology in the Audi e-tron along with the charging options, range calculations and its benefits.
+            </p>
+            <div>
+                <button class="augb1">e-tron hub</button>
+              <button class="augb2">#FutureIsAnAttitude</button>
+            </div>
+        </div>
+
+     </div>
+
+
+
+
+     <div class="mapsec">
+
+        <div class="dealer">
+            <h1>Dealer Locater</h1>
+            <button 
+            style="margin-top: 360px;padding: 10px;width: 170px;background-color: transparent;color: white;border: 2px solid white;"
+            >Explore More</button>
+        </div>
+
+        <img src="https://www.audi.in/content/dam/nemo/in/Banners/googlemap.JPG?imwidth=1277" alt="" width="1000px" height="500px">
+
+     </div>
+
+
+
+     <div class="connectsec">
+
+        <div class="connecdet">
+            <div class="co" >
+           <p>Because you expect more from your Audi than just a drive from A to B. Download it now, to get more of your car on your phone.
+            myAudi</p>
+            <div class="myaudibut">
+                <button class="mybut1">myaudi Connect</button>
+                <button class="mybut2">Audi shop</button>
+            </div>
+          
+        </div>
+           
+        </div>
+
+       <img src="https://www.audi.in/content/dam/nemo/in/3_O-Homepage/122_Audi-App-Post_1690-X-1896px_WC.jpg?imwidth=845" alt="" width="600px" height=700px">
+
+     </div>
+   
+   
+
+
+ 
+
+    <div class="cardsection">
+         <h1 class="title">Your audi is waiting</h1>
+       <div class="cards">
+
+             <% slides.map((x) => { %>
+                 
+                <div>
+                    <img src=<%=x.image %> alt="" width="380px">
+                    <p><%= x.para %></p>
+                    <a href="">Click here</a>
+                </div>
+
+            <% }) %>
+
+            
+       </div>
+
+       <div class="cardsection">
+        <h1 class="title">Your audi is waiting</h1>
+      <div class="cards">
+        
+      
+    <% rows.map((x) => { %>
+         <div>
+            <img src=<%= x.image %> alt="" width="380px">
+               <p>Book a Drive</p>
+               <a href="">Click here</a>
+         </div>
+   <% }) %>     
+   
+
+      </div>
+
+
+
+       <div class="aug">
+        <img src="https://www.audi.in/content/dam/nemo/in/3_O-Homepage/116_E-Tron_AR-Banner_883X857.jpg" alt="" width="570">
+  
+         <div>
+          <p class="augtitle">Augmented Reality</p>
+  
+          <div>
+              <button class="augb1">e-tron</button>
+              <button class="augb2">e-tron Sportsback</button>
+          </div>
+         </div>
+  
+      </div>
+
+
+      
+  
+
+
+    </div>
+ 
+</body>
+
+</html>
